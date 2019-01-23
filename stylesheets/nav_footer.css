@@ -1,0 +1,102 @@
+nav .container {
+  position: absolute;
+  top: 22px;
+  justify-content: flex-start;
+}
+
+nav .logo {
+  position: relative;
+  margin-top: -22px;;
+}
+
+/* Botão Pular para Conteúdo Principal */
+
+nav .logo .pularNavegacao {
+  position: absolute;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: white;
+  color: #607989;
+}
+
+/* Caixa do Logotipo */
+
+nav .logo img {
+  background-color: transparent;
+  margin-top: 22px;
+}
+
+/* Botões do Navbar */
+
+nav .nav-link {
+  color: #fff;
+  background-color: transparent;
+  padding-top: 17px;
+}
+
+#index nav .nav-link:focus,
+#index nav .nav-link:hover,
+#index nav .nav-link[aria-expanded="true"] {
+  background-color: #51c5e0;
+  color: #fff;
+}
+
+#praticando nav .nav-link:focus,
+#praticando nav .nav-link:hover,
+#praticando nav .nav-link[aria-expanded="true"] {
+  background-color: #edaf00;
+  color: #fff;
+}
+
+/* Rodapé */
+
+footer .aval-rea {
+  flex-shrink: 0;
+}
+
+footer, footer .aval-rea .btn-secondary {
+  background-color: white;
+  color: #354551;
+}
+
+footer {
+  color: white;
+}
+
+footer .aval-rea .btn-secondary {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer .aval-rea .btn-secondary:hover,
+footer .aval-rea .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, .10)
+}
+
+footer .cred-rea span:not(:last-child) {
+  border-right-color: white;
+}
+
+#creditos a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Main */
+
+main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+  main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+}
