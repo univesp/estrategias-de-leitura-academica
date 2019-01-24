@@ -24,6 +24,13 @@ $(document).ready(function(){
 
   var btn_limpar = $("#btn_limpar");
   var btn_comparar = $("#btn_comparar");
+  var btn_fechar = $(".btn_fechar");
+
+  // Fecha divs parent dispensáveis
+
+  $(".btn_fechar").on("click", function(){
+    $(this).parent().fadeOut();
+  })
 
   // Expande automaticamente a textarea
 
@@ -50,26 +57,24 @@ $(document).ready(function(){
   // Zera campos da ficha
 
   btn_limpar.on("click", function(){
-
     $("#ficha textarea").val("");
-
   });
 
   // Compara preenchimento da ficha de leitura
 
   btn_comparar.on("click", function(){
-
     // Ativa modal
     $("#ficha").addClass("comparada modal-on");
-    // Scroll para o topo da ficha
+    // Sobe para o topo da ficha
     $('html, body').animate({
       scrollTop: $('#ficha').offset().top - 20
     }, 'slow');
-    // Esconde botão "Comparar"
-    $(this).addClass("d-none");
+    // Remove botão "Comparar"
+    $(this).remove();
     // Mostra botão "Imprimir"
-    $("#grupo_imprimir").removeClass("d-none");
-
+    $("#btn_imprimir").removeClass("d-none");
+    // Remove o alerta
+    $(".alert-ficha").fadeOut();
   });
 
   // Clique em qualquer área da ficha remove o modal

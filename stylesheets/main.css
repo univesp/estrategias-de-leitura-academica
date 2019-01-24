@@ -54,12 +54,18 @@ a, a:hover, a:focus {
 
 .seta {
   font-size: 3em;
-  bottom: 1rem;
-  margin-top: 1rem;
-  margin: auto;
   text-align: center;
-  display: block;
+  margin: auto;
   cursor: pointer;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+.alert-warning {
+  background-color: #ffc300;
+  color: black;
 }
 
 .flex {
@@ -135,8 +141,7 @@ iframe.emoldurado {
   border: 1px solid #cccccc;
   box-shadow: 0px 10px 18px #f2f2f2;
   position: relative;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 #ficha .header {
@@ -245,6 +250,16 @@ iframe.emoldurado {
   display: inline-block;
 }
 
+#ficha .resposta:before {
+  content: "Sugestão de resposta";
+  font-size: .75rem;
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  color: #edaf00;
+  text-transform: uppercase;
+}
+
 /* Overlay */
 
 #ficha .overlay {
@@ -297,17 +312,16 @@ iframe.emoldurado {
     padding-top: 0;
     margin-top: 1rem;
   }
-  #ficha .resposta:before {
-    content: "Parâmetro de resposta:";
-    font-size: .8rem;
-    display: block;
-    font-weight: bold;
-  }
 }
 
 /* -----------------------
 --------- Botões ---------
 ----------------------- */
+
+main i.btn_fechar {
+  cursor: pointer;
+  transition: .25s all;
+}
 
 main .btn {
   font-size: 18px;
@@ -325,6 +339,10 @@ main .btn {
   align-self: center;
 }
 
+main .d-flex .btn {
+  margin: 1rem;
+}
+
 main .btn:not(:first-of-type){
   margin-left: 1rem;
 }
@@ -337,17 +355,13 @@ main .btn:focus {
 main .btn .icon {
   height: 50px;
   width: 50px;
+  flex-shrink: 0;
   margin-right: 1rem;
+  background-repeat: no-repeat;
 }
 
 main .btn p {
   color: black;
-}
-
-main .btn img {
-  height: 50px;
-  width: auto;
-  margin-right: 1rem;
 }
 
 main .btn-warning {
@@ -427,6 +441,11 @@ main .btn .icon-download {
 main .btn .icon-comparar {
   -webkit-mask-image: url("../assets/icon-comparar.svg");
   mask-image: url("../assets/icon-comparar.svg");
+}
+
+main .btn .icon-explicacao {
+  -webkit-mask-image: url("../assets/icon-explicacao.svg");
+  mask-image: url("../assets/icon-explicacao.svg");
 }
 
 @media (max-width: 992px){
