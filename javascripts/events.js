@@ -30,6 +30,7 @@ $(document).ready(function(){
 
   $(".btn_fechar").on("click", function(){
     $(this).parent().fadeOut();
+    // $(".balao").addClass("animated bounce");
   })
 
   // Expande automaticamente a textarea
@@ -68,19 +69,21 @@ $(document).ready(function(){
     // Sobe para o topo da ficha
     $('html, body').animate({
       scrollTop: $('#ficha').offset().top - 20
-    }, 'slow');
+    }, 600);
     // Remove botão "Comparar"
     $(this).remove();
     // Mostra botão "Imprimir"
     $("#btn_imprimir").removeClass("d-none");
     // Remove o alerta
     $(".alert-ficha").fadeOut();
+    //Anima balão
+    $(".balao").addClass("animated delay-05s bounce");
   });
 
   // Clique em qualquer área da ficha remove o modal
 
-  $("#ficha").on("click", function(){
-    $(this).removeClass("modal-on");
+  $(".balao i").on("click", function(){
+    $("#ficha").removeClass("modal-on");
   });
 
   // Clique no botão de impressão
@@ -102,9 +105,9 @@ $(document).ready(function(){
     }, 1000)
   }
 
-  seta_intro.on("click", function(){
-    scroll_to('#video');
-  })
+  // seta_intro.on("click", function(){
+  //   scroll_to('#video');
+  // })
 
   seta_grupo_imprimir.on("click", function(){
     scroll_to('#conclusao');

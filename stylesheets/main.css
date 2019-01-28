@@ -10,7 +10,7 @@ main {
 main p {
   font-family: 'Muli', sans-serif;
   font-size: 18px;
-  max-width: 800px;
+  max-width: 920px;
   margin: auto;
 }
 
@@ -40,6 +40,7 @@ h5 {
   color: #fff;
   font-size: 2rem;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 img {
@@ -111,10 +112,6 @@ a, a:hover, a:focus {
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: relative;
-}
-
-.tela-destacada.full-height {
-  min-height: 100vh;
 }
 
 .tela-destacada p {
@@ -201,12 +198,12 @@ iframe.emoldurado {
   z-index: 2;
   display: none;
   position: absolute;
+  top: -1.5rem;
   border-radius: 1rem;
+  transform: translate3d(0, -100%, 0);
   right: 0;
-  top: -6rem;
-  margin-right: .25rem;
+  left: 0;
   font-size: .85rem;
-  width: 50%;
 }
 
 #ficha .balao p {
@@ -260,29 +257,6 @@ iframe.emoldurado {
   text-transform: uppercase;
 }
 
-/* Overlay */
-
-#ficha .overlay {
-  position: absolute;
-  background-color: rgba(255, 255, 255, .8);
-  top: 0; bottom: 0;
-  right: 0; left: 0;
-  z-index: 1;
-  display: none;
-  transition: .25s all;
-}
-
-#ficha.modal-on .overlay {
-  display: inline-block;
-}
-
-#ficha.modal-on .overlay i {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  cursor: pointer;
-}
-
 @media (max-width: 992px){
   #ficha {
     padding: 1.5rem;
@@ -293,11 +267,6 @@ iframe.emoldurado {
   #ficha.comparada .resposta {
     margin-left: 0;
     margin-top: .5rem;
-  }
-  #ficha.comparada .balao {
-    width: 100%;
-    top: 3rem;
-    left: 0;
   }
 }
 
