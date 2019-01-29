@@ -51,7 +51,7 @@ Para inserir ou editar um item dentro de uma subseção nova ou preexistente, ad
 </form>
 ```
 
-Agora edite o conteúdo do item, mantendo equivalentes os textos de ```label for ``` e ```textarea id```.
+Agora edite o conteúdo do item, mantendo relacionados os textos de ```label for ``` e ```textarea id```.
 
 ```
 <!-- Novo item -->
@@ -85,7 +85,7 @@ Caso você esteja inserindo um novo campo na ficha-exercício (em [praticando/in
 
 Neste caso, revise todos os textos das páginas html, especialmente os da ```div#intro``` do [index.html](index.html) - que traz o título do REA e o introduz. Esteja também atento ao link do ```iframe``` nesta mesma div: você pode substituí-lo pelo link do vídeo de sua autoria ou simplesmente removê-lo. 
 
-Para criar novas seções, acrescente uma ```div.container-fluid``` na posição esperada. A classe ```tela-destacada``` irá adicionar o comportamento de ```div``` colorida e com texto centralizado. Para tanto, aponte as cores de fundo e de borda desejadas pela tag ```style```, conforme o exemplo:
+Para criar novas seções, acrescente uma ```div.container-fluid``` na posição esperada. A classe ```tela-destacada``` irá adicionar as características de ```div``` colorida e com texto centralizado. Você pode personalizar as cores de fundo e de borda utilizando a tag ```style```, conforme o exemplo:
 
 ```
 <div class="container-fluid tela-destacada" style="background-color: #46abc6; border-top-color: #51c5e0; border-bottom-color: #38889b; padding-top: 5rem">
