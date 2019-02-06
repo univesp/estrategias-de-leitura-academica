@@ -71,7 +71,7 @@
         <div>
           <h2>Estratégias de </br><span>Leitura Acadêmica</span></h2>
           <p>
-            Estratégias são <b>métodos utilizados para o alcance de um objetivo determinado</b>. Neste recurso, você conhecerá estratégias de leitura acadêmica, isto é, métodos para <b>ler textos acadêmicos de forma eficiente</b>.
+            Estratégias são <b>métodos utilizados para o alcance de um objetivo determinado</b>. Neste recurso, você conhecerá estratégias de leitura acadêmica, isto é, métodos para <b>ler textos acadêmicos de forma eficiente.</b>
           </p>
           <p>
             Também disponibilizamos um modelo de <b>ficha de leitura</b>, ferramenta que pode ajudá-lo a compreender e a esquematizar os textos lidos, além de registrar essas informações para consultas futuras.
@@ -80,18 +80,13 @@
             Pronto para turbinar seus estudos?
           </h5>
         </div>
-        <!-- <a class="material-icons seta" style="position:absolute; bottom: 1rem">keyboard_arrow_down</a> -->
-      <!-- </div> -->
-    <!-- <div class="container-fluid tela-destacada d-print-none" style="background-color: #38889b;" id="video"> -->
-      <!-- <div class="container"> -->
-        <div class="embed-responsive embed-responsive-16by9" style="max-width:700px; margin: auto">
-          <iframe class="embed-responsive-item emoldurado" src="https://www.youtube.com/embed/J4QRVWfv0qI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9 emoldurado" style="max-width:700px; margin: auto">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pxJ5wFcuwBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <a class="btn btn-light align-itens-center flex" id="btn_dicas" href="https://drive.google.com/file/d/18bl8YvoYb8PhkcKHWJ8VEQS7QUYdawa_/view" target="_blank">
           <div class="icon icon-download"></div>
           <p><b>Salvar</b> resumo das estratégias</p>
         </a>
-        <!-- <a class="material-icons seta">keyboard_arrow_down</a> -->
       </div>
     </div>
 
@@ -100,7 +95,7 @@
       <div class="container">
 
         <div class="row d-print-none">
-          <div class="col-md-3">
+          <div class="col-md-3 text-center">
             <img src="assets/lampada.png">
           </div>
           <div class="col-md-9">
@@ -129,19 +124,22 @@
 
                 <ol type="a">
 
+                  <!-- Título -->
+                  <li>
+                    <div class="form-group row">
+                      <label for="inputAutor" class="col-lg-2 col-md-12 col-form-label">Titulo</label>
+                      <div class="col-lg-10 flex col-md-12">
+                        <textarea class="form-control" id="inputTitulo" rows="2" placeholder="Título do artigo ou texto. Ex: Sobre a autonomia do estudante na educação a distância."></textarea>
+                      </div>
+                    </div>
+                  </li>
+
                   <!-- Autor -->
                   <li>
                     <div class="form-group row">
                       <label for="inputAutor" class="col-lg-2 col-md-12 col-form-label">Autor</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputAutor" rows="2" placeholder="Nome e breves informações sobre quem escreveu o texto. Ex: Otto Peters, professor alemão especialista em ensino a distância."></textarea>
-                        <div class="balao text-center d-print-none">
-                          <p>Os campos amarelos mostram como sua ficha pode estar</p>
-                          <i class="material-icons">close</i>
-                        </div>
-                        <div class="resposta">
-                          José Renato Gomes de Oliveira e Maíra Motta Nunes (ambos do Instituto Anísio Teixeira)
-                        </div>
                       </div>
                     </div>
                   </li>
@@ -152,7 +150,6 @@
                       <label for="inputPublicacao" class="col-lg-2 col-md-12 col-form-label">Publicação</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputPublicacao" rows="2" placeholder="Informações contextuais do material. Ex: artigo publicado na revista X, livro publicado pela editora Y no ano 2000."></textarea>
-                        <div class="resposta">5º Congresso Nacional de Ambientes Hipermídia para Aprendizagem - 2011</div>
                       </div>
                     </div>
                   </li>
@@ -163,7 +160,6 @@
                       <label for="inputAssunto" class="col-lg-2 col-md-12 col-form-label">Assunto</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputAssunto" rows="2" placeholder="O tema principal do texto. Geralmente está no resumo, no título ou nos primeiros parágrafos. Ex: teoria cognitiva da aprendizagem multimídia."></textarea>
-                        <div class="resposta">Autonomia do estudante na EaD</div>
                       </div>
                     </div>
                   </li>
@@ -174,7 +170,6 @@
                       <label for="inputRecursos" class="col-lg-2 col-md-12 col-form-label">Recursos</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputRecursos" rows="2" placeholder="Fontes de informações apresentadas pelo autor. Ex: livros e autores, documentos, experimentos, entrevistas."></textarea>
-                        <div class="resposta">- Dados do Censo para mostrar o crescimento da EaD; <br/>- Pesquisa bibliográfica (autores como Kant e Belloni, relatório da ONU etc.)</div>
                       </div>
                     </div>
                   </li>
@@ -192,7 +187,6 @@
                       <label for="inputTeses" class="col-lg-2 col-md-12 col-form-label">Teses / Objetivos</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputTeses" rows="2" placeholder="A principal ideia apresentada/defendida pelo autor. Ex: mostrar que a educação aberta facilita a aprendizagem autônoma."></textarea>
-                        <div class="resposta">- Falta autonomia aos educandos, não só na EaD; <br/>- A autonomia é primordial na educação e um dos pilares da EaD; <br/> - O professor deve orientar o aluno e incentivar a autonomia; <br/>- Educar não é simplesmente transmitir conhecimentos, mas sim tornar o sujeito capaz de exercer sua liberdade e pensar de forma autônoma.</div>
                       </div>
                     </div>
                   </li>
@@ -203,7 +197,6 @@
                       <label for="inputEvidencias" class="col-lg-2 col-md-12 col-form-label">Evidências</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputEvidencias" rows="2" placeholder="Como o autor chegou a essa ideia ou conclusão. Ex: dados estatísticos provenientes do Censo do IBGE."></textarea>
-                        <div class="resposta">- O modelo fordista (educação em massa) comprometeu a qualidade da educação, e deve ser superado. Modelos teóricos da economia (como o liberalismo econômico) influenciaram a EaD;<br/>- Após os anos 90, ocorreu uma adaptação dos serviços, dando mais flexibilidade ao estudante de EaD, que pode decidir quando e o que estudar – o que exige autonomia;<br/>- A falta de autonomia gera problemas de adaptação e evasão dos estudantes na educação a distância;<br/>- O ensino que apenas transmite conhecimentos forma um aluno passivo, que não reflete sobre o mundo;<br/>- Segundo a ONU, os quatro pilares da educação do século XXI são: aprender a conhecer, aprender a fazer, aprender a conviver, aprender a ser. Para isso é preciso autonomia;<br/>- Heteronomia é pensar e agir sob orientação de outros, ou seja, o oposto de Autonomia;<br/>- A autonomia vai além do aspecto pedagógico, pois é necessária à sociedade. Para Kant, o homem que não toma a decisão de pensar e agir por si mesmo, sem a direção de outras pessoas, está na “menoridade”.</div>
                       </div>
                     </div>
                   </li>
@@ -221,7 +214,6 @@
                       <label for="inputDesconhecidos" class="col-lg-2 col-md-12 col-form-label">Palavras e conceitos desconhecidos</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputDesconhecidos" rows="2" placeholder="Anote para pesquisa posterior palavras ou conceitos que você desconhece. Ex: memória de trabalho e memória sensorial."></textarea>
-                        <div class="resposta">- Epistemológico: relativo à epistemologia, à teoria do conhecimento;<br/>- Ontológico: relativo à ou próprio da ontologia, a investigação teórica do ser;<br/>- Etimologicamente: a etimologia trata da história ou origem das palavras.</div>
                       </div>
                     </div>
                   </li>
@@ -239,7 +231,6 @@
                       <label for="inputContribuicao" class="col-lg-2 col-md-12 col-form-label">Contribuição</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputContribuicao" rows="2" placeholder="Relações com seu contexto acadêmico/profissional. Ex: conhecer a teoria de Piaget ajuda a compreender os estágios de desenvolvimento das crianças com que trabalho."></textarea>
-                        <div class="resposta">Os autores destacam a importância da autonomia para o estudante de EaD. Porém, afirmam que a necessidade da autonomia não é apenas pedagógica, pois a filosofia já afirma há muito tempo que ela é necessária para o desenvolvimento humano.</div>
                       </div>
                     </div>
                   </li>
@@ -249,8 +240,7 @@
                     <div class="form-group row">
                       <label for="inputInterpretacoes" class="col-lg-2 col-md-12 col-form-label">Outras interpretações</label>
                       <div class="col-lg-10 flex col-md-12">
-                        <textarea class="form-control" id="inputInterpretacoes" rows="2" placeholder="Relações com outras ideias, autores e conhecimentos prévios. Ex: Piaget se encaixa no construtivismo; Vygotsky, por sua vez, é sócio-construtivista porque dá mais importância às interações."></textarea>
-                        <div class="resposta">- Kant: autonomia relacionada à “maioridade”. O ser não autônomo permanece na “menoridade”;<br/>- Freire: autonomia como princípio educativo e educação para a autonomia.</div>
+                        <textarea class="form-control" id="inputInterpretacoes" rows="2" placeholder="Relações com outras ideias, autores e conhecimentos prévios. Ex: Piaget se encaixa no construtivismo; Vygotsky, por sua vez, é socioconstrutivista porque dá mais importância às interações."></textarea>
                       </div>
                     </div>
                   </li>
@@ -261,7 +251,6 @@
                       <label for="inputProblemas" class="col-lg-2 col-md-12 col-form-label">Problemas e Limitações</label>
                       <div class="col-lg-10 flex col-md-12">
                         <textarea class="form-control" id="inputInterpretacoes" rows="2" placeholder="Ressalvas (justificadas) às ideias apresentadas no texto. Ex: o estudo é interessante, mas se restringe a populações urbanas, ignorando o contexto rural."></textarea>
-                        <div class="resposta">- No item 2, ao trazer elementos históricos, os autores afirmam que “é possível” que aquilo tenha acontecido, que “pode ter ocorrido”, sem apresentar fontes seguras ou afirmar com certeza<br/>- Os autores não explicam de que forma o professor ou a instituição podem incentivar a autonomia dos estudantes. Alguns parágrafos são muito longos, o que dificulta sua compreensão.</div>
                       </div>
                     </div>
                   </li>
@@ -278,14 +267,14 @@
         <div class="container text-center d-print-none d-flex flex-column align-items-center">
 
           <div class="d-flex d-print-none">
-            <a id="btn_imprimir" class="btn btn-warning flex">
+            <button type="button" id="btn_imprimir" class="btn btn-warning flex">
               <div class="icon icon-imprimir"></div>
               <p><b>Imprimir</b> ficha preenchida</p>
-            </a>
-            <a id="btn_limpar" class="btn btn-outline-warning d-print-none flex">
+            </button>
+            <button type="button" id="btn_limpar" class="btn btn-outline-warning d-print-none flex">
               <div class="icon icon-limpar"></div>
               <p><b>Limpar </b>ficha</p>
-            </a>
+            </button>
           </div>
 
           <p style="padding-top: 1rem; padding-bottom: 1rem">
@@ -325,7 +314,7 @@
 
         <!-- Comente em caso de adaptação do REA -->
         <p>
-          <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="license.txt" target="_blank">MIT</a>.
+          <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2019.txt" target="_blank">MIT</a>.
           Você pode utilizá-lo, compartilhá-lo e modificá-lo.</span>
           <span><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></span>
           <span><a href="https://github.com/univesp/estrategias-de-leitura-academica" target="_blank" aria-label="GitHub">GitHub <i class="fab fa-github"></i></a></span>.
@@ -356,13 +345,15 @@
           <p>Secretaria de Desenvolvimento Econômico</p>
 
           <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
 
           <h6>Equipe</h6>
           <p><span class="funcao">Coordenação</span>Juliana Hampel</p>
           <p><span class="funcao">Layout</span>Ana Clara Viola Goyeneche Gatti</p>
-          <p><span class="funcao">Programação</span>William Kimura e Bruna Garabito</p>
+          <p><span class="funcao">Programação</span>Bruna Garabito e William Kimura</p>
           <p><span class="funcao">Planejamento e Design Instrucional</span>Aparecida Azevedo</p>
-          <p><span class="funcao">Colaboração</span>Nádia Pirillo e Édison Trombeta</p>
+          <p><span class="funcao">Colaboração</span>Édison Trombeta e Nádia Pirillo</p>
 
         </div>
         <div class="modal-footer">

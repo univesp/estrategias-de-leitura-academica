@@ -30,7 +30,6 @@ $(document).ready(function(){
 
   $(".btn_fechar").on("click", function(){
     $(this).parent().fadeOut();
-    // $(".balao").addClass("animated bounce");
   })
 
   // Expande automaticamente a textarea
@@ -80,13 +79,7 @@ $(document).ready(function(){
     $(".balao").addClass("animated delay-05s bounce");
   });
 
-  // Clique em qualquer área da ficha remove o modal
-
-  $(".balao i").on("click", function(){
-    $("#ficha").removeClass("modal-on");
-  });
-
-  // Clique no botão de impressão
+  // Imprime página após clique no botão
 
   var btn_imprimir = $("#btn_imprimir");
 
@@ -94,7 +87,7 @@ $(document).ready(function(){
     window.print();
   })
 
-  // setas
+  // Desliza página até div indicada após clique nas setas
 
   var seta_intro = $("#intro .seta");
   var seta_grupo_imprimir = $("#grupo_imprimir .seta");
@@ -104,10 +97,6 @@ $(document).ready(function(){
       scrollTop: $(div_id).offset().top
     }, 1000)
   }
-
-  // seta_intro.on("click", function(){
-  //   scroll_to('#video');
-  // })
 
   seta_grupo_imprimir.on("click", function(){
     scroll_to('#conclusao');

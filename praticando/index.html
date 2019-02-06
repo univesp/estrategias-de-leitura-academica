@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="assets/fb-share.png" />
+  <meta property="og:image" content="https://apps.univesp.br/estrategias-de-leitura-academica/assets/fb-share.png" />
   <meta property="og:title" content="Univesp | Estratégias de Leitura Acadêmica" />
   <meta property="og:description"
-  content=""/>
+  content="A leitura de textos acadêmicos e científicos pode ser difícil para muitas pessoas. Neste recurso, você vai conhecer e praticar estratégias que vão ajudá-lo a compreender melhor textos desse gênero."/>
+  <meta name="keywords" content="leitura, leitura acadêmica, estratégias de leitura, texto acadêmico, texto científico, artigo científico">
   <title>Univesp | Estratégia de Leitura Acadêmica</title>
 
   <link rel="shortcut icon" href="http://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
@@ -79,7 +80,7 @@
     <div class="container-fluid" style="margin-bottom: 3rem">
       <div class="container text-center d-print-none">
         <img src="../assets/430377-PE5X2C-933.png" style="margin-bottom: 2rem">
-        <p>Leia o artigo presente <a href="https://drive.google.com/file/d/1LBsTkxv1hkDWvtmCfl-XXK9ca2QcvkI5/view" target="_blank">neste link</a> e, em seguida, preencha a ficha de leitura abaixo.<br/> Após o preenchimento, você poderá gerar uma sugestão de resposta e compará-la com seus resultados, avaliando seu desempenho.
+        <p>Leia o artigo presente <a href="https://drive.google.com/file/d/1LBsTkxv1hkDWvtmCfl-XXK9ca2QcvkI5/view" target="_blank" title="Artigo: Sobre a Autonomia do Estudante na Educação a Distância">neste link</a> e, em seguida, preencha a ficha de leitura abaixo.<br/> Após o preenchimento, você poderá gerar uma sugestão de resposta e compará-la com seus resultados, avaliando seu desempenho.
         <p><b>Vamos lá?</b></p>
       </div>
     </div>
@@ -88,7 +89,9 @@
 
       <div class="alert alert-warning alert-ficha flex justify-content-between align-items-center d-print-none" role="alert" style="margin-bottom: 0; border: 1px solid #cccccc; border-bottom: 0">
         <span><b>Precisa de dicas?</b> Veja na <a href="../index.html" target="_blank">página inicial</a>.</span>
-        <i class="material-icons btn_fechar">close</i>
+        <button type="button" class="btn_fechar" title="fechar este aviso">
+          <i class="material-icons">close</i>
+        </button>
       </div>
 
       <!-- Ficha -->
@@ -99,14 +102,31 @@
           <h6 class="d-none d-print-block">apps.univesp.br/estrategias-de-leitura-academica</h6>
         </div>
 
-        <!-- <div class="overlay d-print-none"></div> -->
-
         <ol>
 
           <!-- Texto como um todo -->
           <li>Texto como um todo
 
             <ol type="a">
+
+              <!-- Título -->
+              <li>
+                <div class="form-group row">
+                  <label for="inputTitulo" class="col-lg-2 col-md-12 col-form-label">Título</label>
+                  <div class="col-lg-10 flex col-md-12">
+                    <textarea class="form-control" id="inputTitulo" rows="2" placeholder="Título do artigo ou texto. Ex: Sobre a autonomia do estudante na educação a distância."></textarea>
+                    <div class="resposta">
+                      <div class="balao text-center d-print-none">
+                        <p>Os campos amarelos mostram como sua ficha pode estar</p>
+                        <button type="button" title="fechar este aviso">
+                          <i class="material-icons btn_fechar">close</i>
+                        </button>
+                      </div>
+                      Mapeamento de Competências: Um foco no aluno da Educação a Distância
+                    </div>
+                  </div>
+                </div>
+              </li>
 
               <!-- Autor -->
               <li>
@@ -115,11 +135,7 @@
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputAutor" rows="2" placeholder="Nome e breves informações sobre quem escreveu o texto. Ex: Otto Peters, professor alemão especialista em ensino a distância."></textarea>
                     <div class="resposta">
-                      <div class="balao text-center d-print-none">
-                        <p>Os campos amarelos mostram como sua ficha pode estar</p>
-                        <i class="material-icons">close</i>
-                      </div>
-                      José Renato Gomes de Oliveira e Maíra Motta Nunes (ambos do Instituto Anísio Teixeira)
+                      - Patricia Alejandra Behar – Professora Titular da Faculdade de Educação e dos Cursos de Pós-Graduação em Educação e em Informática na Educação da UFRGS*. [Fonte: plataforma lattes]<br/><br/>- Ketia Kellen Araújo da Silva - Pós-Doutoranda (UFRGS), Doutora em Informática na Educação (UFRGS), Mestre em Educação (UFRGS), Graduada em Pedagogia (UFRGS). [Fonte: plataforma lattes]<br/><br/>*UFRGS – Universidade Federal do Rio Grande do Sul
                     </div>
                   </div>
                 </div>
@@ -131,7 +147,7 @@
                   <label for="inputPublicacao" class="col-lg-2 col-md-12 col-form-label">Publicação</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputPublicacao" rows="2" placeholder="Informações contextuais do material. Ex: artigo publicado na revista X, livro publicado pela editora Y no ano 2000."></textarea>
-                    <div class="resposta">5º Congresso Nacional de Ambientes Hipermídia para Aprendizagem - 2011</div>
+                    <div class="resposta">Artigo publicado na revista Novas Tecnologias na Educação, do CINTED (Centro Interdisciplinar de Novas Tecnologias na Educação)- UFRGS, em dezembro de 2012.</div>
                   </div>
                 </div>
               </li>
@@ -142,7 +158,7 @@
                   <label for="inputAssunto" class="col-lg-2 col-md-12 col-form-label">Assunto</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputAssunto" rows="2" placeholder="O tema principal do texto. Geralmente está no resumo, no título ou nos primeiros parágrafos. Ex: teoria cognitiva da aprendizagem multimídia."></textarea>
-                    <div class="resposta">Autonomia do estudante na EaD</div>
+                    <div class="resposta">Mapeamento das competências necessárias aos alunos da Educação a Distância (EAD).</div>
                   </div>
                 </div>
               </li>
@@ -153,7 +169,9 @@
                   <label for="inputRecursos" class="col-lg-2 col-md-12 col-form-label">Recursos</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputRecursos" rows="2" placeholder="Fontes de informações apresentadas pelo autor. Ex: livros e autores, documentos, experimentos, entrevistas."></textarea>
-                    <div class="resposta">- Dados do Censo para mostrar o crescimento da EaD; <br/>- Pesquisa bibliográfica (autores como Kant e Belloni, relatório da ONU etc.)</div>
+                    <div class="resposta">
+                      - Abordagem quantitativa e qualitativa (quanti-quali);<br/>- Estudo de caso exploratório;<br/>- Levantamento bibliográfico sobre EAD, perfil do aluno e competências;<br/>- Curso de extensão que incluiu entrevistas e questionários;<br/>Objeto de Aprendizagem (AO) intitulado CompMap (Mapeamento de Competências);<br/>- Resultado da análise: quadro com 12 competências<br/>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -171,7 +189,7 @@
                   <label for="inputTeses" class="col-lg-2 col-md-12 col-form-label">Teses / Objetivos</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputTeses" rows="2" placeholder="A principal ideia apresentada/defendida pelo autor. Ex: mostrar que a educação aberta facilita a aprendizagem autônoma."></textarea>
-                    <div class="resposta">- Falta autonomia aos educandos, não só na EaD; <br/>- A autonomia é primordial na educação e um dos pilares da EaD; <br/> - O professor deve orientar o aluno e incentivar a autonomia; <br/>- Educar não é simplesmente transmitir conhecimentos, mas sim tornar o sujeito capaz de exercer sua liberdade e pensar de forma autônoma.</div>
+                    <div class="resposta">O estudante de EAD precisa ter determinadas competências para aproveitar melhor a modalidade. Essas competências são 12: fluência digital, autonomia, organização, planejamento, administração do tempo, comunicação, reflexão, presencialidade virtual, autoavaliação, automotivação, flexibilidade e trabalho em equipe.</div>
                   </div>
                 </div>
               </li>
@@ -182,7 +200,7 @@
                   <label for="inputEvidencias" class="col-lg-2 col-md-12 col-form-label">Evidências</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputEvidencias" rows="2" placeholder="Como o autor chegou a essa ideia ou conclusão. Ex: dados estatísticos provenientes do Censo do IBGE."></textarea>
-                    <div class="resposta">- O modelo fordista (educação em massa) comprometeu a qualidade da educação, e deve ser superado. Modelos teóricos da economia (como o liberalismo econômico) influenciaram a EaD;<br/>- Após os anos 90, ocorreu uma adaptação dos serviços, dando mais flexibilidade ao estudante de EaD, que pode decidir quando e o que estudar – o que exige autonomia;<br/>- A falta de autonomia gera problemas de adaptação e evasão dos estudantes na educação a distância;<br/>- O ensino que apenas transmite conhecimentos forma um aluno passivo, que não reflete sobre o mundo;<br/>- Segundo a ONU, os quatro pilares da educação do século XXI são: aprender a conhecer, aprender a fazer, aprender a conviver, aprender a ser. Para isso é preciso autonomia;<br/>- Heteronomia é pensar e agir sob orientação de outros, ou seja, o oposto de Autonomia;<br/>- A autonomia vai além do aspecto pedagógico, pois é necessária à sociedade. Para Kant, o homem que não toma a decisão de pensar e agir por si mesmo, sem a direção de outras pessoas, está na “menoridade”.</div>
+                    <div class="resposta">- O avanço da EAD teve grande impacto na Educação, modificando vários aspectos dela, inclusive o perfil do aluno.;<br/>- Para ser aluno ou professor da EAD, são necessárias competências específicas.<br/>- Competência é definida aqui como a junção de conhecimento, habilidade e atitude.</div>
                   </div>
                 </div>
               </li>
@@ -200,7 +218,7 @@
                   <label for="inputDesconhecidos" class="col-lg-2 col-md-12 col-form-label">Palavras e conceitos desconhecidos</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputDesconhecidos" rows="2" placeholder="Anote para pesquisa posterior palavras ou conceitos que você desconhece. Ex: memória de trabalho e memória sensorial."></textarea>
-                    <div class="resposta">- Epistemológico: relativo à epistemologia, à teoria do conhecimento;<br/>- Ontológico: relativo à ou próprio da ontologia, a investigação teórica do ser;<br/>- Etimologicamente: a etimologia trata da história ou origem das palavras.</div>
+                    <div class="resposta">- Presencialidade: “conceito central na aprendizagem online, a ‘presença’ em um curso a distância é entendida como a capacidade de cada participante projetar as suas características pessoais na comunidade virtual de aprendizagem, e assim apresentar-se a outros participantes como ‘pessoa real’ ”. (Fonte: <a href="https://www.educação-a-distancia.com">www.educação-a-distancia.com</a>)</div>
                   </div>
                 </div>
               </li>
@@ -218,7 +236,7 @@
                   <label for="inputContribuicao" class="col-lg-2 col-md-12 col-form-label">Contribuição</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputContribuicao" rows="2" placeholder="Relações com seu contexto acadêmico/profissional. Ex: conhecer a teoria de Piaget ajuda a compreender os estágios de desenvolvimento das crianças com que trabalho."></textarea>
-                    <div class="resposta">Os autores destacam a importância da autonomia para o estudante de EaD. Porém, afirmam que a necessidade da autonomia não é apenas pedagógica, pois a filosofia já afirma há muito tempo que ela é necessária para o desenvolvimento humano.</div>
+                    <div class="resposta">As autoras apresentam um conjunto claro de competências essenciais para o aluno de EAD, o que é interessante para a autoavaliação do estudante a respeito de quais competências tem e quais precisa desenvolver.</div>
                   </div>
                 </div>
               </li>
@@ -228,8 +246,10 @@
                 <div class="form-group row">
                   <label for="inputInterpretacoes" class="col-lg-2 col-md-12 col-form-label">Outras interpretações</label>
                   <div class="col-lg-10 flex col-md-12">
-                    <textarea class="form-control" id="inputInterpretacoes" rows="2" placeholder="Relações com outras ideias, autores e conhecimentos prévios. Ex: Piaget se encaixa no construtivismo; Vygotsky, por sua vez, é sócio-construtivista porque dá mais importância às interações."></textarea>
-                    <div class="resposta">- Kant: autonomia relacionada à “maioridade”. O ser não autônomo permanece na “menoridade”;<br/>- Freire: autonomia como princípio educativo e educação para a autonomia.</div>
+                    <textarea class="form-control" id="inputInterpretacoes" rows="2" placeholder="Relações com outras ideias, autores e conhecimentos prévios. Ex: Piaget se encaixa no construtivismo; Vygotsky, por sua vez, é socioconstrutivista porque dá mais importância às interações."></textarea>
+                    <div class="resposta">Competência aqui é definida como conhecimento-habilidade-atitude.
+                    Entretanto, as próprias autoras afirmam que esse conceito possui diversas interpretações, algumas das quais elas mesmas apresentam: Le Boterf (1995), Fleury e Fleury (2001), Perrenoud e Thurler (2002), Zabala e Arnau (2010).
+                    </div>
                   </div>
                 </div>
               </li>
@@ -240,7 +260,7 @@
                   <label for="inputProblemas" class="col-lg-2 col-md-12 col-form-label">Problemas e Limitações</label>
                   <div class="col-lg-10 flex col-md-12">
                     <textarea class="form-control" id="inputInterpretacoes" rows="2" placeholder="Ressalvas (justificadas) às ideias apresentadas no texto. Ex: o estudo é interessante, mas se restringe a populações urbanas, ignorando o contexto rural."></textarea>
-                    <div class="resposta">- No item 2, ao trazer elementos históricos, os autores afirmam que “é possível” que aquilo tenha acontecido, que “pode ter ocorrido”, sem apresentar fontes seguras ou afirmar com certeza<br/>- Os autores não explicam de que forma o professor ou a instituição podem incentivar a autonomia dos estudantes. Alguns parágrafos são muito longos, o que dificulta sua compreensão.</div>
+                    <div class="resposta">Não é exatamente um problema, mas o texto não aborda como desenvolver ou melhorar as competências, apenas explica quais são elas.</div>
                   </div>
                 </div>
               </li>
@@ -253,19 +273,18 @@
       </form><!-- Fim da ficha -->
 
       <div class="d-flex flex-wrap justify-content-center d-print-none" style="margin-top:3rem">
-        <a id="btn_voltar" class="btn btn-outline-warning d-print-none flex" href="../index.html" target="_blank">
+        <button type="button" id="btn_comparar" class="btn btn-warning d-print-none flex order-1 order-md-2">
+          <div class="icon icon-comparar"></div>
+          <p><b>Comparar</b> ficha de leitura</p>
+        </button>
+        <a id="btn_voltar" class="btn btn-outline-warning d-print-none flex order-2 order-md-1" href="../index.html" target="_blank">
           <div class="icon icon-explicacao"></div>
           <p><b>Revisar</b> conceitos</p>
         </a>
-        <a id="btn_comparar" class="btn btn-warning d-print-none flex">
-          <div class="icon icon-comparar"></div>
-          <p><b>Comparar</b> ficha de leitura</p>
-        </a>
-        <a id="btn_imprimir" class="btn btn-warning flex d-none">
+        <button type="button" id="btn_imprimir" class="btn btn-warning flex d-none order-3">
           <div class="icon icon-imprimir"></div>
           <p>Quero <b>imprimir</b> o exercício</p>
-        </a>
-        <a class="seta material-icons" style="width:100%;text-align:center;margin-top:2rem">keyboard_arrow_down</a>
+        </button>
       </div>
 
     </div>
@@ -319,13 +338,15 @@
           <p>Secretaria de Desenvolvimento Econômico</p>
 
           <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
 
           <h6>Equipe</h6>
           <p><span class="funcao">Coordenação</span>Juliana Hampel</p>
           <p><span class="funcao">Layout</span>Ana Clara Viola Goyeneche Gatti</p>
-          <p><span class="funcao">Programação</span>William Kimura e Bruna Garabito</p>
+          <p><span class="funcao">Programação</span>Bruna Garabito e William Kimura</p>
           <p><span class="funcao">Planejamento e Design Instrucional</span>Aparecida Azevedo</p>
-          <p><span class="funcao">Colaboração</span>Nádia Pirillo e Édison Trombeta</p>
+          <p><span class="funcao">Colaboração</span>Édison Trombeta e Nádia Pirillo</p>
 
           <br/><p>Imagens por <a href="https://br.freepik.com/" target="_blank">Freepik</a></p>
 
